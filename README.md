@@ -103,3 +103,5 @@ This project reflects both my data skills and my ability to think like a busines
 
 
 
+[registered company project.ipynb](https://github.com/user-attachments/files/28066212/registered.company.project.ipynb)
+
