@@ -63,12 +63,12 @@ Raw MCA Data (1.99 Million rows) → Python Cleaning → PostgreSQL 6 Views → 
 
 ## PostgreSQL Views Created
 
-- company_status_vw - Companies grouped by Active, Inactive, Unknown 
-- company_state_wise_vw - Company count and totals per state 
-- industry_sector_vw - Company count per business sector 
-- capital_size_vw - Companies bucketed as Micro, Small, Medium, Large, Enterprise 
-- company_class_vw - Private, Public, OPC, Foreign, LLP breakdown 
-- registration_by_year_vw - Company count registered per year (1857–2020) 
+- Company_status_vw - Companies grouped by Active, Inactive, Unknown 
+- Company_state_wise_vw - Company count and totals per state 
+- Industry_sector_vw - Company count per business sector 
+- Capital_size_vw - Companies bucketed as Micro, Small, Medium, Large, Enterprise 
+- Company_class_vw - Private, Public, OPC, Foreign, LLP breakdown 
+- Registration_by_year_vw - Company count registered per year (1857–2020) 
 
 ---
 
@@ -91,43 +91,44 @@ Raw MCA Data (1.99 Million rows) → Python Cleaning → PostgreSQL 6 Views → 
 
 ---
 
-## Corporate India Overview
+## Corporate India Overview:
 
 ## <img width="950" height="543" alt="Corporate India Overview" src="https://github.com/user-attachments/assets/84433e7f-7a5f-46c6-a3cb-68e44c0c0529" />
 
 
-## Company Status Analysis
+## Company Status Analysis:
 
  ## <img width="947" height="543" alt="Company Status Analysis" src="https://github.com/user-attachments/assets/599d1ee7-cf5e-41cf-95bf-ae635631c059" />
 
-## State Wise Company Registration
+## State Wise Company Registration:
 
  ## <img width="952" height="542" alt="State Wise Company Registration" src="https://github.com/user-attachments/assets/78c86691-6c3e-4023-a0d7-912e77433b79" />
 
-## Capital Contibution Analysis 
+## Capital Contibution Analysis: 
 
  ## <img width="952" height="541" alt="Capital Contribution Analysis" src="https://github.com/user-attachments/assets/5b9c6601-6a9d-45ba-a2b6-4382953c3350" />
 
-## Business Scale Breakdown 
+## Business Scale Breakdown: 
 
  ## <img width="950" height="543" alt="Business Scale Breakdown" src="https://github.com/user-attachments/assets/7e9f1aa4-e620-478b-8ebc-31bae06c5263" />
 
-## Company Class Distribution 
+## Company Class Distribution: 
 
  ## <img width="947" height="537" alt="Company Class Distribution" src="https://github.com/user-attachments/assets/01b37d75-8b00-4ea7-9c18-77e2214fd01c" />
 
-## Sector Wise Business Activity
+## Sector Wise Business Activity:
 
  ## <img width="953" height="540" alt="Sector Wise Business Activity" src="https://github.com/user-attachments/assets/d5891185-999f-417e-a09e-864436fbf232" />
 
-## Company Registration Trend 
+## Company Registration Trend: 
  
  ## <img width="954" height="542" alt="Company Registration Trend" src="https://github.com/user-attachments/assets/6a1d87a7-86a5-4484-8a61-c9dd39033787" />
 
 
 ## [MCA PROJECT.ipynb](https://github.com/user-attachments/files/28192599/MCA.PROJECT.ipynb)
 
-## [MCA PROJECT.sql](https://github.com/user-attachments/files/28193239/MCA.PROJECT.sql)
+## [MCA PROJECT.sql](https://github.com/user-attachments/files/28196111/MCA.PROJECT.sql)
+
 
 
  
