@@ -1,107 +1,145 @@
-**India Corporate Landscape — MCA Data Analysis**
+## India Corporate Landscape — MCA Data Analysis
 
-A complete data analytics project built on **11.24 lakh company records** from India's Ministry of Corporate Affairs (MCA).  
-This project covers the full data analyst workflow — from raw data cleaning to an interactive dashboard.
+> Analyzing 1.99 Million company records from India's Ministry of Corporate Affairs (MCA)
 
----
 
-**Project Summary**
 
-India has over 1.1 million registered companies. But where are they? What sectors do they operate in? How much capital do they hold? Are they still active?
+## What This Project Is About
 
-This project answers those questions using real government data — cleaned, stored, and visualized end to end.
+This project explores India's complete company registration database to answer real business questions:
 
----
-
-**Tools Used**
-
-- Python (Pandas) - Data cleaning — removed nulls, fixed dates, standardized columns
-- PostgreSQL - Data storage — created views to split and segment 11L row
-- Power BI -  Dashboard — 8 interactive pages with slicers, KPI cards, and charts 
+- Which states have the most registered companies?
+- What % of companies are still active today?
+- Which industries dominate India's business landscape?
+- How has company registration grown since 1857?
+- How much capital is authorized vs actually paid up?
 
 ---
 
-**Project Workflow**
+## Tools Used
 
-Raw MCA Data (CSV) → Python Cleaning → PostgreSQL Views → Power BI Dashboard
+
+| Python (Pandas) | Cleaned raw data — handled nulls, fixed dates, standardized columns |
+| PostgreSQL | Stored data, created 6 views to segment 1.99M rows by category |
+| Power BI | Built 8-page interactive dashboard with DAX measures and slicers |
 
 ---
 
-**Dashboard Pages**
+## Data Pipeline
 
-- Corporate India — Overview - 4 KPI cards + Top 5 states bar chart
-- Company Status Analysis - Active vs Inactive vs other status
-- State-Wise Company Registration - Bar chart for Top 10 states + Treemap for all states
-- Capital Contribution Analysis - Authorized vs Paidup capital by state
-- Business Scale Breakdown - Micro / Small / Medium / Large / Enterprise split
-- Company Class Distribution - Private vs Public vs One Person Company
-- Sector-Wise Business Activity - Top industries by company count
-- Company Registration Trend - Year-wise growth from 1863 to 2019
+Raw MCA Data (1.99 Million rows) → Python Cleaning → PostgreSQL 6 Views → Power BI 8 Page Dashboard
+
+---
+
+## Dashboard — 8 Pages
+
+| 1 | Corporate India — Overview | 1.99M total companies, 60.99% active, Maharashtra as top state |
+| 2 | Active vs Inactive — Company Status | 60.99% Active, 37.88% Inactive, 1.13% Unknown |
+| 3 | State-Wise Company Registration | Maharashtra 395K, Delhi 348K, West Bengal 207K — Top 10 bar + all states treemap |
+| 4 | Authorized vs Paidup Capital | Capital comparison by state — Maharashtra leads at 21.92T authorized cap |
+| 5 | Business Scale Breakdown | 54.68% Small Scale, 31.72% Medium, 11.12% Large, rest Micro and Enterprise |
+| 6 | Private vs Public vs OPC | Private Limited 18.19L, Public Limited 1.39L, OPC 30K, Foreign 2.1K |
+| 7 | Sector-Wise Business Activity | Real Estate 6.79L (#1), Manufacturing 4.10L (#2), Wholesale 2.27L (#3) |
+| 8 | Company Registration Trend | Growth from 1857 to 2020 — peak registrations in 2019 at 1.28 Lakh companies |
+
+---
+
+## Real Numbers from the Dashboard
+
+
+| Total Companies Analyzed | 1.99 Million |
+| Active Companies | 60.99% |
+| Inactive Companies | 37.88% |
+| Top #1 State | Maharashtra (3.95 Lakh) |
+| Top #2 State | Delhi (3.48 Lakh) |
+| TOP #1 Business Sector | Real Estate (6.79 Lakh companies) |
+| TOP #2 Business Sector | Manufacturing (4.10 Lakh companies) |
+| Largest Company Class | Private Limited (18.19 Lakh) |
+| Peak Registration Year | 2019 (1.28 Lakh companies) |
+| Data Range | 1857 to 2020 |
+| Majority by Capital | Small Scale ₹1L–10L (54.68%) |
+
+---
+
+## PostgreSQL Views Created
+
+| company_status_vw | Companies grouped by Active, Inactive, Unknown |
+| company_state_wise_vw | Company count and totals per state |
+| industry_sector_vw | Company count per business sector |
+| capital_size_vw | Companies bucketed as Micro, Small, Medium, Large, Enterprise |
+| company_class_vw | Private, Public, OPC, Foreign, LLP breakdown |
+| registration_by_year_vw | Company count registered per year (1857–2020) |
+
+---
+
+## DAX Measures Written
+
+| Active Rate % | % of companies currently active — 60.99% |
+| Top State | State with highest registered companies — Maharashtra |
+| Total Active Companies | Count of active companies only |
+
+---
+
+## Key Business Findings
+
+- Maharashtra and Delhi together hold 37% of all registered companies in India
+- Real Estate is #1 sector with 6.79 lakh companies — nearly double Manufacturing
+- 54.68% of companies are Small Scale (₹1L–10L capital) — confirms India's MSME-dominated economy
+- Nearly 38% of companies are inactive — 1 in 3 registered companies is no longer operating
+- Company registrations grew 163x in 70 years — from around 780 in 1950 to 1.28 lakh in 2019
+- Private Limited dominates at 91% of all company classes
+
+---
+
+## Corporate India Overview
+
+## <img width="950" height="543" alt="Corporate India Overview" src="https://github.com/user-attachments/assets/84433e7f-7a5f-46c6-a3cb-68e44c0c0529" />
+
+
+## Company Status Analysis
+
+ ## <img width="947" height="543" alt="Company Status Analysis" src="https://github.com/user-attachments/assets/599d1ee7-cf5e-41cf-95bf-ae635631c059" />
+
+## State Wise Company Registration
+
+ ## <img width="952" height="542" alt="State Wise Company Registration" src="https://github.com/user-attachments/assets/78c86691-6c3e-4023-a0d7-912e77433b79" />
+
+## Capital Contibution Analysis 
+
+ ## <img width="952" height="541" alt="Capital Contribution Analysis" src="https://github.com/user-attachments/assets/5b9c6601-6a9d-45ba-a2b6-4382953c3350" />
+
+## Business Scale Breakdown 
+
+ ## <img width="950" height="543" alt="Business Scale Breakdown" src="https://github.com/user-attachments/assets/7e9f1aa4-e620-478b-8ebc-31bae06c5263" />
+
+## Company Class Distribution 
+
+ ## <img width="947" height="537" alt="Company Class Distribution" src="https://github.com/user-attachments/assets/01b37d75-8b00-4ea7-9c18-77e2214fd01c" />
+
+## Sector Wise Business Activity
+
+ ## <img width="953" height="540" alt="Sector Wise Business Activity" src="https://github.com/user-attachments/assets/d5891185-999f-417e-a09e-864436fbf232" />
+
+## Company Registration Trend 
  
----
+ ## <img width="954" height="542" alt="Company Registration Trend" src="https://github.com/user-attachments/assets/6a1d87a7-86a5-4484-8a61-c9dd39033787" />
 
-**Key Numbers**
 
- - Total Companies - 11.24 Lakh
- - Active Companies - 80%
- - Top State - Maharashtra (2.22 Lakh companies)
- - Top Sector - Real Estate and Business Activities
- - Peak Registration Year - 2017
- - Capital Range (majority) - 1 Lakh – 1 Crore
+## [MCA PROJECT.ipynb](https://github.com/user-attachments/files/28192599/MCA.PROJECT.ipynb)
+
+## [MCA PROJECT.sql](https://github.com/user-attachments/files/28193239/MCA.PROJECT.sql)
+
+
  
----
+## About Me
 
-**Key Findings**
+I come from a Business Advisory background and am moving into Data Analytics.
+This project shows I can handle real-world data end to end — clean it, store it, segment it, and find insights that actually mean something to a business.
 
-- Maharashtra and Delhi together hold nearly 40% of all registered companies in India
-- Real Estate is India's #1 business sector by number of registered companies
-- 80% of companies fall in the Small to Medium capital range — showing India's MSME-driven economy
-- Company registrations grew sharply after 2005 and peaked around 2010–2017
-- Nearly 1 in 5 companies is struck off or inactive — showing a high business exit rate
 
----
-
-**About Me**
-
-This project reflects both my data skills and my ability to think like a business analyst — not just building charts, but asking the right questions from the data.
 
 - LinkedIn: [www.linkedin.com/in/krithiga-srinivasan-716401347]
 - Email: [krithigasrinivasan@yahoo.com]
+  
 
 ---
-**Corporate India - Overview**
-
-<img width="899" height="502" alt="Corporate India - Overview" src="https://github.com/user-attachments/assets/7b9b815e-7d6a-4ccf-948b-fc62c6889fe6" />
-
-**Company Status Analysis**
-
-<img width="901" height="497" alt="Company Status Analysis" src="https://github.com/user-attachments/assets/f61c88f9-7c3e-4573-bf09-d36dd2bb6493" />
-
-**State Wise Company Registration**
-
-<img width="885" height="497" alt="State Wise Company Registration" src="https://github.com/user-attachments/assets/18b35011-3762-4e51-9cee-0f87a4e7b2c3" />
-
-**Capital Contribution Analysis**
-
-<img width="888" height="490" alt="Capital Contribution Analysis" src="https://github.com/user-attachments/assets/f83d5762-0c67-46ae-a12e-0e584a467c83" />
-
-**Business Scale Breakdown**
-
-<img width="886" height="493" alt="Business Scale Breakdown" src="https://github.com/user-attachments/assets/c584443a-c849-4165-bbdb-42a6bebf7d22" />
-
-**Company Class Distribution**
-
-<img width="883" height="488" alt="Company Class Distribution" src="https://github.com/user-attachments/assets/51d64eab-40cd-4cf0-9b22-fd2d59830d96" />
-
-**Sector Wise Business Activity**
-
-<img width="886" height="497" alt="Sector Wise Business Activity" src="https://github.com/user-attachments/assets/c296355e-56c3-414e-9c2f-89d9bf4182a4" />
-
-**Company Registration Trend**
-
-<img width="879" height="490" alt="Company Registration Trend" src="https://github.com/user-attachments/assets/fce67713-3a9d-459a-9c59-395cfe9abbf0" />
-
-
-
-[registered company project.ipynb](https://github.com/user-attachments/files/28066212/registered.company.project.ipynb)
-
