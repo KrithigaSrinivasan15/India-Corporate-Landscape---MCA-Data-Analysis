@@ -19,9 +19,9 @@ This project explores India's complete company registration database to answer r
 ## Tools Used
 
 
-| Python (Pandas) | Cleaned raw data — handled nulls, fixed dates, standardized columns |
-| PostgreSQL | Stored data, created 6 views to segment 1.99M rows by category |
-| Power BI | Built 8-page interactive dashboard with DAX measures and slicers |
+- Python (Pandas) - Cleaned raw data — handled nulls, fixed dates, standardized columns 
+- PostgreSQL - Stored data, created 6 views to segment 1.99M rows by category 
+- Power BI - Built 8-page interactive dashboard with DAX measures and slicers 
 
 ---
 
@@ -33,50 +33,50 @@ Raw MCA Data (1.99 Million rows) → Python Cleaning → PostgreSQL 6 Views → 
 
 ## Dashboard — 8 Pages
 
-| 1 | Corporate India — Overview | 1.99M total companies, 60.99% active, Maharashtra as top state |
-| 2 | Active vs Inactive — Company Status | 60.99% Active, 37.88% Inactive, 1.13% Unknown |
-| 3 | State-Wise Company Registration | Maharashtra 395K, Delhi 348K, West Bengal 207K — Top 10 bar + all states treemap |
-| 4 | Authorized vs Paidup Capital | Capital comparison by state — Maharashtra leads at 21.92T authorized cap |
-| 5 | Business Scale Breakdown | 54.68% Small Scale, 31.72% Medium, 11.12% Large, rest Micro and Enterprise |
-| 6 | Private vs Public vs OPC | Private Limited 18.19L, Public Limited 1.39L, OPC 30K, Foreign 2.1K |
-| 7 | Sector-Wise Business Activity | Real Estate 6.79L (#1), Manufacturing 4.10L (#2), Wholesale 2.27L (#3) |
-| 8 | Company Registration Trend | Growth from 1857 to 2020 — peak registrations in 2019 at 1.28 Lakh companies |
+- Corporate India — Overview - 1.99M total companies, 60.99% active, Maharashtra as top state 
+- Active vs Inactive — Company Status - 60.99% Active, 37.88% Inactive, 1.13% Unknown 
+- State-Wise Company Registration - Maharashtra 395K, Delhi 348K, West Bengal 207K — Top 10 bar + all states treemap 
+- Authorized vs Paidup Capital - Capital comparison by state — Maharashtra leads at 21.92T authorized cap 
+- Business Scale Breakdown - 54.68% Small Scale, 31.72% Medium, 11.12% Large, rest Micro and Enterprise 
+- Private vs Public vs OPC - Private Limited 18.19L, Public Limited 1.39L, OPC 30K, Foreign 2.1K 
+- Sector-Wise Business Activity - Real Estate 6.79L (#1), Manufacturing 4.10L (#2), Wholesale 2.27L (#3) 
+- Company Registration Trend - Growth from 1857 to 2020 — peak registrations in 2019 at 1.28 Lakh companies 
 
 ---
 
 ## Real Numbers from the Dashboard
 
 
-| Total Companies Analyzed | 1.99 Million |
-| Active Companies | 60.99% |
-| Inactive Companies | 37.88% |
-| Top #1 State | Maharashtra (3.95 Lakh) |
-| Top #2 State | Delhi (3.48 Lakh) |
-| TOP #1 Business Sector | Real Estate (6.79 Lakh companies) |
-| TOP #2 Business Sector | Manufacturing (4.10 Lakh companies) |
-| Largest Company Class | Private Limited (18.19 Lakh) |
-| Peak Registration Year | 2019 (1.28 Lakh companies) |
-| Data Range | 1857 to 2020 |
-| Majority by Capital | Small Scale ₹1L–10L (54.68%) |
+- Total Companies Analyzed - 1.99 Million
+- Active Companies - 60.99% 
+- Inactive Companies - 37.88% 
+- Top #1 State - Maharashtra (3.95 Lakh) 
+- Top #2 State - Delhi (3.48 Lakh) 
+- TOP #1 Business Sector - Real Estate (6.79 Lakh companies) 
+- TOP #2 Business Sector - Manufacturing (4.10 Lakh companies) 
+- Largest Company Class - Private Limited (18.19 Lakh) 
+- Peak Registration Year - 2019 (1.28 Lakh companies) 
+- Data Range - 1857 to 2020 
+- Majority by Capital - Small Scale ₹1L–10L (54.68%) 
 
 ---
 
 ## PostgreSQL Views Created
 
-| company_status_vw | Companies grouped by Active, Inactive, Unknown |
-| company_state_wise_vw | Company count and totals per state |
-| industry_sector_vw | Company count per business sector |
-| capital_size_vw | Companies bucketed as Micro, Small, Medium, Large, Enterprise |
-| company_class_vw | Private, Public, OPC, Foreign, LLP breakdown |
-| registration_by_year_vw | Company count registered per year (1857–2020) |
+- company_status_vw - Companies grouped by Active, Inactive, Unknown 
+- company_state_wise_vw - Company count and totals per state 
+- industry_sector_vw - Company count per business sector 
+- capital_size_vw - Companies bucketed as Micro, Small, Medium, Large, Enterprise 
+- company_class_vw - Private, Public, OPC, Foreign, LLP breakdown 
+- registration_by_year_vw - Company count registered per year (1857–2020) 
 
 ---
 
 ## DAX Measures Written
 
-| Active Rate % | % of companies currently active — 60.99% |
-| Top State | State with highest registered companies — Maharashtra |
-| Total Active Companies | Count of active companies only |
+- Active Rate % - % of companies currently active — 60.99% 
+- Top State - State with highest registered companies — Maharashtra 
+- Total Active Companies - Count of active companies only 
 
 ---
 
