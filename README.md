@@ -125,9 +125,9 @@ Raw MCA Data (1.99 Million rows) → Python Cleaning → PostgreSQL 6 Views → 
  ## <img width="954" height="542" alt="Company Registration Trend" src="https://github.com/user-attachments/assets/6a1d87a7-86a5-4484-8a61-c9dd39033787" />
 
 
-## [MCA PROJECT.ipynb](https://github.com/user-attachments/files/28192599/MCA.PROJECT.ipynb)
+## [MCA PROJECT.sql](https://github.com/user-attachments/files/28438415/MCA.PROJECT.sql)
 
-## [MCA PROJECT.sql](https://github.com/user-attachments/files/28196111/MCA.PROJECT.sql)
+## [MCA PROJECT.ipynb](https://github.com/user-attachments/files/28438411/MCA.PROJECT.ipynb)
 
 
 
